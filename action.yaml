@@ -1,0 +1,25 @@
+name: Honeycomb Honeymarker
+author: Arvind Naidu
+description: Add Honeycomb Markers to your GitHub Actions workflows.
+
+branding:
+  icon: activity
+  color: yellow
+
+inputs:
+  apikey:
+    description: API key used to communicate with the Honeycomb API.
+    required: true
+  dataset:
+    description: Honeycomb dataset to use.
+    required: true
+  type:
+    description: Identifier for marker (e.g. "deploy").
+    required: false
+  message:
+    description: Message describing this specific marker (e.g. "build 192837").
+    required: false
+
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
