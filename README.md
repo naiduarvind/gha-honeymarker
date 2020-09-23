@@ -1,2 +1,4 @@
-# gha-honeymarker
-Add Honeycomb Markers to your GitHub Actions workflows.
+# `gha-honeymarker` Action
+This action adds Honeycomb Markers from your GitHub Actions workflows.
+
+![release](/assets/honeymarker.gif)
