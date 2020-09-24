@@ -4,12 +4,12 @@
 
 This GitHub Action adds a marker from your deploy workflows using [Honeycomb's marker tool][honeymarker]. It annotates the timeline with a marker and optional metadata from the workflow and will always send a marker for the deploy, even if the deploy failed.
 
-`gha-honeymarker` should be added to after a deploy indicating a successful change or otherwise. Every job will create a separate marker.
+`gha-honeymarker` should be added after a deploy indicating a successful change or otherwise. Every job will create a separate marker.
 
 ⚠️ Limitations:
 
-- this action only works on Linux hosts
-- if downloading honeymarker fails or if running honeymarker failed (i.e. a bug in honeymarker) the entire job will fail
+- Only works on Linux hosts.
+- If downloading honeymarker fails or if running honeymarker fails (i.e. a bug in honeymarker), the entire job will fail.
 
 [honeymarker]: https://docs.honeycomb.io/working-with-your-data/customizing-your-query/markers/
 
