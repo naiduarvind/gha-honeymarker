@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Create honeymarker
-        uses: naiduarvind/gha-honeymarker@v1
+        uses: naiduarvind/gha-honeymarker@main
         with:
           apikey: ${{ secrets.BUILDEVENTS_APIKEY }}
           dataset: builds
