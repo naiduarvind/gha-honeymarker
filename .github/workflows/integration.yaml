@@ -1,0 +1,19 @@
+name: gha-honeymarker-integration
+on:
+  push:
+  schedule:
+    - cron: "*/15 * * * *"
+
+jobs:
+  integration:
+    name: gha-honeymarker-integration
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Create honeymarker
+        uses: naiduarvind/gha-honeymarker@v1
+        with:
+          apikey: ${{ secrets.BUILDEVENTS_APIKEY }}
+          dataset: builds
