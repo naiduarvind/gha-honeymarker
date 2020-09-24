@@ -23,13 +23,13 @@ Put the action in the beginning of your worflow:
     # Required: Honeycomb API key - needed to send markers.
     apikey: ${{ secrets.BUILDEVENTS_APIKEY }}
 
-    # Required: the Honeycomb dataset to use.
+    # Required: The Honeycomb dataset to use.
     dataset: gha-honeymarker
 
-    # Optional: 
+    # Optional: The identifier for the marker.
     type: ${{ github.workflow }}
 
-    # Optional: 
+    # Optional: The message describing the marker.
     message: ${{ github.run-id}}-${{ job.status }} 
 
 
