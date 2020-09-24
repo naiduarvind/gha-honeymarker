@@ -16,9 +16,11 @@ inputs:
   type:
     description: Identifier for marker (e.g. "deploy").
     required: false
+    default: ${{ github.workflow }}
   message:
-    description: Message describing this specific marker (e.g. "build 192837").
+    description: Message describing this specific marker (e.g. "24-success").
     required: false
+    default: ${{ github.run-id}}-${{ job.status }} 
 
 runs:
     using: 'docker'

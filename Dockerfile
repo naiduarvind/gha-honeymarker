@@ -9,6 +9,6 @@ LABEL "repository"="https://github.com/naiduarvind/gha-honeymarker"
 LABEL "homepage"="https://github.com/naiduarvind"
 LABEL "maintainer"="Arvind Naidu <no-reply@thebility.engineer>"
 
-COPY entrypoint.go /usr/bin/entrypoint.go
+COPY entrypoint.sh /entrypoint.sh
 
-ENTRYPOINT [ "go", "run", "/usr/bin/entrypoint.go" ]
+ENTRYPOINT ["/entrypoint.sh"]
