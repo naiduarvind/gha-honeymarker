@@ -20,7 +20,7 @@ inputs:
   message:
     description: Message describing this specific marker (e.g. "24-success").
     required: false
-    default: ${{ github.run_id }}-${{ job.status }} 
+    default: ${{ github.run_number }}-${{ job.status }} 
 
 runs:
     using: 'docker'
