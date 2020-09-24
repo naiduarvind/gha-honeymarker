@@ -55,7 +55,7 @@ This repository has its own workflow which will run every 15 minutes. See [.gith
 
 This workflow will create the following marker in Honeycomb:
 
-![Marker created in Honeycomb](./example-marker.png)
+![Marker created in Honeycomb](/assets/marker.png)
 
 ## License
 
