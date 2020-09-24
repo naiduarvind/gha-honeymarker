@@ -30,7 +30,7 @@ Put the action in the beginning of your worflow:
     type: ${{ github.workflow }}
 
     # Optional: The message describing the marker.
-    message: ${{ github.run-id}}-${{ job.status }} 
+    message: ${{ github.run-id }}-${{ job.status }} 
 
 
   # 'honeymarker add' should be placed after a deploy to indicate a change is successful or otherwise.
