@@ -18,7 +18,7 @@ This GitHub Action adds a marker from your deploy workflows using [Honeycomb's m
 Put the action in the beginning of your worflow:
 
 ```yaml
-- uses: naiduarvind/gha-honeymarker@main
+- uses: naiduarvind/gha-honeymarker@master
   with:
     # Required: Honeycomb API key - needed to send markers.
     apikey: ${{ secrets.BUILDEVENTS_APIKEY }}
